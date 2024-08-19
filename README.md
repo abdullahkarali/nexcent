@@ -16,4 +16,5 @@ Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izley
 1. **Proje Deposu'nu Klonlayın:**
 
    ```bash
-[   git clone https://github.com/kullaniciadi/proje-adi.git](https://github.com/abdullahkarali/bizpro-template.git)
+[   git clone [https://github.com/kullaniciadi/proje-adi.git](https://github.com/abdullahkarali/bizpro-template.git)
+](https://github.com/abdullahkarali/nexcent.git)
