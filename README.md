@@ -8,7 +8,6 @@ Bu web sitesi, modern web teknolojileri kullanılarak tasarlanmış ve geliştir
 - **SCSS**: Sayfa stilini ve düzenini belirlemek için kullanıldı.
 - **JavaScript**: Etkileşimli özellikler ve dinamik içerik için kullanıldı.
 - **Bootstrap**: Duyarlı tasarım ve hızlı prototipleme için kullanıldı.
-- 
 ## Kurulum
 
 Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
