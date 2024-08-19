@@ -1,0 +1,28 @@
+.button{
+    padding: 12px 32px;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    transition: 0.3s;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    &:hover{
+        background-color: #fff;
+        border: 1px solid $color-primary;
+        color: $color-black;
+    }
+}
+
+.text-button{
+    display: inline-block;
+    color: $color-primary;
+    padding: 8px 0;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+        color: $color-primary-hover;
+    }
+}

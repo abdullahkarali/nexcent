@@ -1,0 +1,286 @@
+@import "abstracts/mixin";
+@import "abstracts/variables";
+@import "base/typography";
+@import "components/buttons";
+@import "layout/footer";
+@import "layout/header";
+
+@media only screen and (min-width: 0px) {}
+
+/* Mobil ekranlar için 576px'e kadar buradaki kodlar geçerli */
+@media only screen and (max-width: 576px) {
+
+    .slickSlider {
+        .slider {
+            .content {
+                .title {
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    .shopping-banner {
+        .row {
+            gap: 20px;
+        }
+    }
+
+    .text-banner {
+        .text-banner-brand-content {
+            flex-wrap: wrap;
+
+            .text-banner-brand {
+                flex-wrap: wrap;
+                gap: 20px !important;
+            }
+        }
+    }
+
+    footer {
+        padding: 32px 0 12px 0;
+
+        .footer-menu {
+            display: none !important;
+
+            &.newsletter {
+                display: block !important;
+                margin-bottom: 24px;
+            }
+        }
+
+        .accordion {
+            .card {
+                background-color: transparent;
+                border: none;
+                margin-bottom: 12px;
+
+                .card-header {
+                    border: none;
+
+                }
+
+                .btn-link {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #fff;
+                    /* Menü başlığının yazı rengi */
+                    text-decoration: none;
+                    background-color: transparent;
+                    /* Menü başlığının arka plan rengi */
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $color-primary;
+                    }
+
+                    i {
+                        transition: 0.3s;
+                    }
+
+                    &.collapsed {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .card-body {
+                    background-color: transparent;
+                    /* Menü içeriğinin arka plan rengi */
+                    color: #fff;
+
+                    /* Menü içeriğinin yazı rengi */
+                    ul {
+                        padding: 0;
+                        list-style: none;
+
+                        li {
+                            margin: 4px 0;
+
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                                transition: 0.3s;
+
+                                &:hover {
+                                    color: $color-primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    header {
+        .sidebar {
+            display: none;
+        }
+    }
+
+    footer {
+        .footer-menu {
+            &.newsletter {
+                display: none !important;
+            }
+        }
+
+        .accordion {
+            display: none;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        .sidebar {
+            display: block;
+        }
+        .toggle-menu {
+            display: inline-block;
+        }
+
+        ul {
+            display: none;
+        }
+
+        .user {
+            a {
+                display: none;
+            }
+        }
+
+        .icon {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    .slickSlider {
+        .slider {
+            padding: 48px 0;
+
+            .slider-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .banner {
+        .banner-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+    .text-banner{
+        .text-banner-img{
+            margin-bottom: 12px;
+        }
+    }
+
+    .business-stats {
+        padding: 36px 0;
+
+        .business-stats-content-wrapper {
+            margin-top: 20px;
+        }
+    }
+
+    .blog {
+        .blog-container {
+            margin-bottom: 100px;
+        }
+    }
+
+    footer {
+
+        .footer-logo,
+        .copyright {
+            margin-bottom: 20px;
+        }
+
+        .footer-menu {
+            .footer-menu-content {
+                form {
+                    input {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 992px) {
+    .client {
+        .client-content {
+            padding-bottom: 16px;
+        }
+    }
+}
+
+/* Tablet ekranları için 576px ve 1200px arasında geçerli */
+@media only screen and (min-width: 576px) and (max-width: 1200px) {}
+
+/* Hem mobilde hem tablette geçerli kodlar için */
+@media only screen and (max-width: 1200px) {
+    header {
+        font-size: 14px !important;
+
+        ul {
+            gap: 32px;
+
+            li {
+                a {
+                    font-size: 14px !important;
+                }
+            }
+        }
+
+        .user {
+            .button {
+                padding: 8px 8px;
+            }
+        }
+    }
+
+    .seo-text {
+        margin-top: 100px;
+
+        .seo-text-content {
+            .seo-text-title {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 44px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1400px) {}

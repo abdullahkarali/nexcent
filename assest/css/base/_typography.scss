@@ -1,0 +1,47 @@
+head-type-weight{
+    font-weight: 600;
+}
+
+head-type-1{
+    font-size: 64px;
+    @extend head-type-weight;
+    line-height: 76px;
+}
+
+head-type-2{
+    font-size: 36px;
+    @extend head-type-weight;
+    line-height: calc(36px + 8px);
+}
+
+head-type-3{
+    font-size: 28px;
+    @extend head-type-weight;
+    line-height: calc(28px + 8px);
+}
+
+head-type-4{
+    font-size: 20px;
+    @extend head-type-weight;
+    line-height: calc(20px + 8px);
+}
+
+body-type-1{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+body-type-2{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+body-type-3{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body-type-4{
+    font-size: 12px;
+    line-height: 16px;
+}
